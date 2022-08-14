@@ -7,6 +7,7 @@ body {
 
 .cabecalho {
     background-color: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 92px;
     width: 100%;
     padding-left: 20px;
@@ -17,6 +18,7 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
+    z-index: 2;
 }
 
 .cabecalho h1 {
@@ -38,8 +40,8 @@ body {
 
 .conteudo-principal {
     margin-left: 20px;
-    margin-top: 115px;
-    margin-bottom: 110px;
+    margin-top: 105px;
+    margin-bottom: 95px;
 }
 
 .conteudo-principal h1 {
@@ -48,13 +50,13 @@ body {
     font-weight: 400;
     font-size: 26px;
     line-height: 32.28px;
-    margin-top: 16px;
-    margin-bottom: 8px;
+    margin-top: 12px;
+    margin-bottom: 6px;
 }
 
 .pratos {
     width: 100%;
-    height: 216px;
+    height: 180px;
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
@@ -62,7 +64,7 @@ body {
 
 .bebidas {
     width: 100%;
-    height: 216px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
@@ -70,24 +72,26 @@ body {
 
 .sobremesas {
     width: 100%;
-    height: 216px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
 }
 
-.item-menu {
+ .item-menu {
     background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.25);
     width: 172px;
-    height: 216px;
+    height: 100%;
     padding: 9px;
     margin-right: 15px;
     border-radius: 9px;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-
+    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    position: relative;
 }
 
 .item-menu img {
@@ -121,6 +125,15 @@ body {
     line-height: 18.75px; 
 }
 
+.item-menu ion-icon {
+    position: absolute;
+    left: 133px;
+    bottom: 10px;
+    color: #32B72F;
+
+    visibility: hidden;
+}
+
 .rodape {
     background-color: #ffffff;
     height: 92px;
@@ -135,8 +148,7 @@ body {
     justify-content: center;
 }
 
-.rodape button {
-    background-color: #CBCBCB;
+.botao {
     height: 61px;
     width: 100%;
     margin-left: 20px;
@@ -145,11 +157,34 @@ body {
     border-color: #CBCBCB;
 }
 
-.rodape p {
+.botao:disabled {
+    background-color: #CBCBCB;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 23.44px;
-   
 }
+
+.botao:enabled {
+    background-color: #32B72F;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.44px;
+}
+
+.selecionado {
+    border: 3px solid #32B72F;
+}
+
+.selecionado ion-icon {
+    visibility: visible;
+}
+
+
+
+
+
+

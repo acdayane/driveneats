@@ -20,95 +20,114 @@
       <h1>Primeiro, seu prato</h1>
 
       <div class="pratos">
-        <div class="item-menu">
-          <img src="Imagens/frango_yin_yang.png"/>
-          <p>Frango P</p>
-          <p>Um pouco de batata, <br> um pouco de salada</p>
-          <p>14,90</p>
+        
+        <div class="item-menu" onclick="selecionarPrato(this,14.90,'Frango P')">
+            <img src="Imagens/frango_yin_yang.png"/>
+            <p>Frango P</p>
+            <p>Um pouco de batata, <br> um pouco de salada</p>
+            <p>14,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item-menu">
-          <img src="Imagens/frango_yin_yang.png"/>
-          <p>Frango M</p>
-          <p>Um pouco de batata, <br> um pouco de salada</p>
-          <p>17,90</p>
+        <div class="item-menu" onclick="selecionarPrato(this,17.90, 'Frango M')">
+            <img src="Imagens/frango_yin_yang.png"/>
+            <p>Frango M</p>
+            <p>Um pouco de batata, <br> um pouco de salada</p>
+            <p>17,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item-menu">
-          <img src="Imagens/frango_yin_yang.png"/>
-          <p>Frango G</p>
-          <p>Um pouco de batata, <br> um pouco de salada</p>
-          <p>20,90</p>
+        <div class="item-menu" onclick="selecionarPrato(this,20.90, 'Frango G')">
+            <img src="Imagens/frango_yin_yang.png"/>
+            <p>Frango G</p>
+            <p>Um pouco de batata, <br> um pouco de salada</p>
+            <p>20,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item-menu">
-          <img src="Imagens/frango_yin_yang.png"/>
-          <p>Frango GG</p>
-          <p>Um pouco de batata, <br> um pouco de salada</p>
-          <p>23,90</p>
+        <div class="item-menu" onclick="selecionarPrato(this,23.90, 'Frango GG')">
+            <img src="Imagens/frango_yin_yang.png"/>
+            <p>Frango GG</p>
+            <p>Um pouco de batata, <br> um pouco de salada</p>
+            <p>23,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
+    
       </div>
 
       <h1>Agora, sua bebida</h1>
 
       <div class="bebidas">
-        <div class="item-menu">
+        <div class="item-menu" onclick="selecionarBebida(this,4.90, 'Coquinha gelada 200ml')">
           <img src="Imagens/coca.png"/>
           <p>Coquinha gelada</p>
           <p>Lata 200ml</p>
           <p>4,90</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item-menu">
+        <div class="item-menu" onclick="selecionarBebida(this,5.90,'Coquinha gelada 350ml')">
           <img src="Imagens/coca.png"/>
           <p>Coquinha gelada</p>
           <p>Lata 350ml</p>
           <p>5,90</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item-menu">
+        <div class="item-menu" onclick="selecionarBebida(this,7.90, 'Coquinha gelada 600ml')">
           <img src="Imagens/coca.png"/>
           <p>Coquinha gelada</p>
           <p>600ml</p>
           <p>7,90</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item-menu">
+        <div class="item-menu" onclick="selecionarBebida(this,14.90, 'Coquinha gelada 2l')">
           <img src="Imagens/coca.png"/>
           <p>Coquinha gelada</p>
           <p>1,5l</p>
           <p>14,90</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
       </div>
       
       <h1>Por fim, sua sobremesa</h1>
 
       <div class="sobremesas">
-        <div class="item-menu">
+        <div class="item-menu" onclick="selecionarSobremesa(this,7.90, 'Pudim P')">
           <img src="Imagens/pudim.png" />
           <p>Pudim P</p>
           <p>Apenas pudim</p>
           <p>7,90</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item-menu">
+        <div class="item-menu" onclick="selecionarSobremesa(this,9.90, 'Pudim M')">
           <img src="Imagens/pudim.png" />
           <p>Pudim M</p>
           <p>Apenas pudim</p>
           <p>9,90</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item-menu">
+        <div class="item-menu" onclick="selecionarSobremesa(this,11.90, 'Pudim G')">
           <img src="Imagens/pudim.png" />
           <p>Pudim G</p>
           <p>Apenas pudim</p>
           <p>11,90</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item-menu">
+        <div class="item-menu" onclick="selecionarSobremesa(this,13,90, 'Pudim GG')">
           <img src="Imagens/pudim.png" />
           <p>Pudim GG</p>
           <p>Apenas pudim</p>
           <p>13,90</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
       </div>
       
     </div>
     <div class="rodape">
-      <button type="button">
-        <p>Selecione os 3 itens <br> para fechar o pedido</p>
-      </button>
+      
+        <button class="botao" onclick="fecharPedido ()" disabled>
+          <p>Selecione os 3 itens <br> para fechar o pedido</p>
+        </button>
+            
     </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
